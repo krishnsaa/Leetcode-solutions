@@ -9,6 +9,7 @@ class separate_num {
                 list.add(0,current%10);
                 current=current/10;
             }
+            
         }
         int[] result=new int[list.size()];
         for(int i=0;i<list.size();i++){
