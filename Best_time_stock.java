@@ -8,6 +8,7 @@ public class Best_time_stock {
     }
     return maxPro;
     }
+    
 
     
 }
