@@ -38,7 +38,6 @@ public class hashmapmax {
                 result.add(temp);
             }
         }
-        
         return result;
     }
 }
