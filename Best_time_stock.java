@@ -7,8 +7,9 @@ public class Best_time_stock {
         maxPro = Math.max(maxPro, prices[i] - minPrice);
     }
     return maxPro;
-    }
     
+    }
+
 
     
 }
