@@ -10,7 +10,6 @@ public class regular_exp {
         if (dp[i][j] != null) {
             return dp[i][j];
         }
-
         int slen = s.length();
         int plen = p.length();
 
