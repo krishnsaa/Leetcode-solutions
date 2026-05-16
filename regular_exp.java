@@ -12,7 +12,6 @@ public class regular_exp {
         }
         int slen = s.length();
         int plen = p.length();
-
         if (j == plen) {
             return dp[i][j] = (i == slen);
         }
