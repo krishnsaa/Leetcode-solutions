@@ -23,7 +23,6 @@ public class regular_exp {
             return dp[i][j] =support(s, p, i, j + 2) ||
                             (fm && support(s, p, i + 1, j));
         }
-
         return dp[i][j] =
                 fm && support(s, p, i + 1, j + 1);
     }
