@@ -16,7 +16,6 @@ public class regular_exp {
         if (j == plen) {
             return dp[i][j] = (i == slen);
         }
-
         boolean fm = (i < slen &&
                 (s.charAt(i) == p.charAt(j) || p.charAt(j) == '.'));
 
