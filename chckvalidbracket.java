@@ -78,7 +78,6 @@
 //         return dp[i][open] = ans;
 //     }
 // }
-
 class chckvalidbracket {
     public boolean checkValidString(String s) {
         int openMin = 0, openMax = 0;
