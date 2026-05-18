@@ -83,15 +83,21 @@ class chckvalidbracket {
         int openMin = 0, openMax = 0;
         for (int i = 0; i < s.length(); i++) {
             final char c = s.charAt(i);
-            if (c == '(') {
-                openMin++;
-                openMax++;
-            } else if (c == ')') {
-                openMin = Math.max(openMin - 1, 0);
-                openMax--;
-            } else if (c == '*') {
-                openMin = Math.max(openMin - 1, 0);
-                openMax++;
+            switch (c) {
+                case '(' -> {
+                    openMin++;
+                    openMax++;
+                }
+                case ')' -> {
+                    openMin = Math.max(openMin - 1, 0);
+                    openMax--;
+                }
+                case '*' -> {
+                    openMin = Math.max(openMin - 1, 0);
+                    openMax++;
+                }
+                default -> {
+                }
             }
             if (openMax < 0) return false;
         }
