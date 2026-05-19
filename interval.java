@@ -18,6 +18,7 @@ public class interval {
             i++;
         }
 
+        
         result.add(newInterval);
         while (i < n) {
             result.add(intervals[i]);
