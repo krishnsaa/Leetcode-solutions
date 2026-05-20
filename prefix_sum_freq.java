@@ -1,6 +1,8 @@
 import java.util.Arrays;
 public class prefix_sum_freq {
+
     public int[] findThePrefixCommonArray(int[] A, int[] B) {
+
         int n=A.length;
         int[] result=new int[n];
         int[] freq=new int[n+1];
@@ -14,5 +16,7 @@ public class prefix_sum_freq {
             result[i]=count;
         }
         return result;
+        
     }
+
 }
