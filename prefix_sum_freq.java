@@ -13,7 +13,6 @@ public class prefix_sum_freq {
             freq[B[i]]++;
             count+=freq[B[i]]==2 ? 1 :0;
             result[i]=count;
-            
         }
         return result;
     }
