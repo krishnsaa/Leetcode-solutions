@@ -31,6 +31,6 @@ public class potd21may2026 {
         }
         return result;
 
-        
+     
     }
 }
