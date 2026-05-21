@@ -1,6 +1,5 @@
 import java.util.HashSet;
 import java.util.Set;
-
 public class potd21may2026 {
     public int longestCommonPrefix(int[] arr1, int[] arr2) {
         Set<Integer> hs=new HashSet<>();
@@ -30,7 +29,5 @@ public class potd21may2026 {
             }
         }
         return result;
-
-     
     }
 }
