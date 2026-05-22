@@ -1,5 +1,4 @@
 import java.util.Arrays;
-
 public class jump2 {
     public boolean canReach(int[] arr, int start) {
         int n=arr.length;
