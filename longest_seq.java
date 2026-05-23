@@ -1,5 +1,4 @@
 import java.util.Arrays;
-
 public class longest_seq {
     public int lengthOfLIS(int[] nums) {
         int n=nums.length;
@@ -20,5 +19,4 @@ public class longest_seq {
         }
         support(i+1,dp,nums);
     }
-    
 }
