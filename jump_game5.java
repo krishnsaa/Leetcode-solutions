@@ -1,5 +1,4 @@
 public class jump_game5 {
-    class Solution {
     public int maxJumps(int[] arr, int d) {
         int n=arr.length;
         int[] dp=new int[n];
@@ -22,6 +21,5 @@ public class jump_game5 {
         }
         return dp[i]=max;
     }
-}
     
 }
