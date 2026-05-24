@@ -8,6 +8,7 @@ public class jump_game5 {
         }  
         return result;
     }
+    
     public int support(int i,int[] dp,int[] arr,int d){
         if(dp[i]!=0) return dp[i];
         int max=1;
