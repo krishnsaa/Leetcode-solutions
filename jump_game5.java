@@ -21,5 +21,4 @@ public class jump_game5 {
         }
         return dp[i]=max;
     }
-    
 }
