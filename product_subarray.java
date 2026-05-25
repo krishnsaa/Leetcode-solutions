@@ -1,4 +1,5 @@
-class product_subarray {
+import java.utils.*;
+lass product_subarray {
     public int maxProduct(int[] nums) {
         int n=nums.length;
         int maxprod=nums[0];
@@ -20,12 +21,10 @@ class product_subarray {
 
 //  with memoization
 
-class Solution {
-
     HashMap<String, Integer> memo = new HashMap<>();
     int ans = Integer.MIN_VALUE;
 
-    public int maxProduct(int[] nums) {
+    public int maxProduct_memo(int[] nums) {
 
         support(nums, 0, 1);
 
@@ -44,14 +43,12 @@ class Solution {
             return memo.get(key);
         }
 
-        // continue current subarray
         int use = product * nums[i];
 
         ans = Math.max(ans, use);
 
         int take = support(nums, i + 1, use);
 
-        // start new subarray from current index
         ans = Math.max(ans, nums[i]);
 
         int restart = support(nums, i + 1, nums[i]);
