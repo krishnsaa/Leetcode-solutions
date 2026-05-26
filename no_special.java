@@ -14,7 +14,6 @@ class no_special {
         int count=0;
         for(int i=0;i<26;i++){
             if(upper[i]>0 && lower[i]>0) count++;
-
         }
         return count;
         
