@@ -32,6 +32,5 @@ public class special_char_2 {
 
 
         return count;
-        
     }
 }
