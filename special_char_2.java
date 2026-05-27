@@ -1,6 +1,5 @@
 import java.util.HashMap;
 import java.util.Map;
-
 public class special_char_2 {
     public int numberOfSpecialChars(String word) {
         Map<Character,Integer> mpl = new HashMap<>();
