@@ -28,6 +28,7 @@ public class the_suffix_trie {
         public Trie() {
             root = new TrieNode();
         }
+        
         public void insert(String word,int indexw) {
             TrieNode curr = root;
             int len=word.length();
@@ -53,6 +54,7 @@ public class the_suffix_trie {
 
             curr.isEndOfWord = true;
         }
+
 
         public int search(String word) {
             TrieNode curr = root;
