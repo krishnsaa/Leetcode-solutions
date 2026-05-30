@@ -37,6 +37,7 @@ class FenwickTree {
     vals = new int[n + 1];
   }
 
+  
   public void add(int i, int val) {
     while (i < vals.length) {
       vals[i] = Math.max(vals[i], val);
