@@ -10,7 +10,6 @@ public class asteroids {
             }else {
                 return false;
             }
-            
         }
         return true;
         
