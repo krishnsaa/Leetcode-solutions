@@ -24,7 +24,6 @@ class Solution {
 
         return solve(String.valueOf(num2)) - solve(String.valueOf(num1 - 1));
     }
-
     private long solve(String limit) {
         if (limit.equals("0") || limit.equals("-1"))
             return 0;
