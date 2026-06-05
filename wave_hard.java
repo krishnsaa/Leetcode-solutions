@@ -1,4 +1,5 @@
-class Solution {
+import java.util.*;
+class wave_hard {
     long[][][][] countMemo;
     long[][][][] waviMemo;
 
