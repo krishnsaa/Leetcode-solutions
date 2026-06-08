@@ -1,5 +1,6 @@
 public class pivotArray {
     public int[] pivotArray(int[] nums, int pivot) {
+        
         int n=nums.length;
         int i=0;
         int j=n-1;
