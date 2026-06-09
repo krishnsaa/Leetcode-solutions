@@ -7,6 +7,5 @@ public class subarraymax {
             max=Math.max(max,num);
         }
         return (long)(max-min)*k;
-        
     }
 }
