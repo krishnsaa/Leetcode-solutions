@@ -23,7 +23,6 @@ class Solution {
         for (int d : depth) maxDepth = Math.max(maxDepth, d);
         
         if (maxDepth == 0) return 0;
-        
         return powMod(2, maxDepth - 1);
     }
     
