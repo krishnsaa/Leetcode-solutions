@@ -19,9 +19,11 @@ class Solution {
         dfs(1, -1, depth);
         
         int maxDepth = 0;
+
         for (int d : depth) maxDepth = Math.max(maxDepth, d);
         
         if (maxDepth == 0) return 0;
+        
         return powMod(2, maxDepth - 1);
     }
     
