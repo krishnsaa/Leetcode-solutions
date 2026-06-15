@@ -5,8 +5,10 @@ class Solution {
     List<Integer>[] tree;
     
     public int assignEdgeWeights(int[][] edges) {
+
         int n = edges.length + 1;
         tree = new List[n + 1];
+        
         for (int i = 1; i <= n; i++) tree[i] = new ArrayList<>();
         
         for (int[] e : edges) {
