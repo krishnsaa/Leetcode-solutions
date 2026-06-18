@@ -1,3 +1,4 @@
+import java.util.*;
 class lru {
     class Node{
         int key;
@@ -9,7 +10,7 @@ class lru {
             this.val = val;
         }
     }
-    
+
     Map<Integer, Node> map;
     int capacity;
     Node head;
