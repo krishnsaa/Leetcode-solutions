@@ -1,5 +1,4 @@
 class lru {
-
     class Node{
         int key;
         int val;
@@ -10,7 +9,7 @@ class lru {
             this.val = val;
         }
     }
-
+    
     Map<Integer, Node> map;
     int capacity;
     Node head;
