@@ -12,6 +12,7 @@ public class subadd_major {
             }
         }
         return total;
-        
+
     }
+    
 }
