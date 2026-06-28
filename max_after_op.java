@@ -9,7 +9,6 @@ public class max_after_op {
             if(arr[i]-arr[i-1]>1){
                 arr[i]=arr[i-1]+1;
             }
-
         }
         int max=0;
         for(int num:arr){
