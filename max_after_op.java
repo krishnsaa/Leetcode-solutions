@@ -15,6 +15,5 @@ public class max_after_op {
             max=Math.max(num,max);
         }
         return max;
-        
     }
 }
