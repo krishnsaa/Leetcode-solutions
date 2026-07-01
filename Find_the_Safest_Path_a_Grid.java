@@ -10,7 +10,6 @@ public class Find_the_Safest_Path_a_Grid {
         int[][] dist = new int[n][n];
         for (int[] row : dist)
             Arrays.fill(row, -1);
-
         Queue<int[]> q = new LinkedList<>();
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
