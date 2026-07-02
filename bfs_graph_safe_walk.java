@@ -9,7 +9,6 @@ class bfs_graph_safe_walk {
         if (startHealth <= 0) return false;
         int[][] maxHealthAtCell = new int[n][m];
         for (int[] row : maxHealthAtCell) Arrays.fill(row, -1);
-        
         Queue<int[]> q = new ArrayDeque<>();
         q.offer(new int[]{0, 0, startHealth});
         maxHealthAtCell[0][0] = startHealth;
