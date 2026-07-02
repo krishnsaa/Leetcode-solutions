@@ -14,7 +14,6 @@ class bfs_graph_safe_walk {
         maxHealthAtCell[0][0] = startHealth;
         
         int[][] dirs = {{-1,0},{1,0},{0,-1},{0,1}};
-        
         while (!q.isEmpty()) {
             int[] curr = q.poll();
             int r = curr[0], c = curr[1], hp = curr[2];
