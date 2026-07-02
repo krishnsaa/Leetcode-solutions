@@ -7,7 +7,6 @@ class bfs_graph_safe_walk {
         
         int startHealth = health - grid.get(0).get(0);
         if (startHealth <= 0) return false;
-        
         int[][] maxHealthAtCell = new int[n][m];
         for (int[] row : maxHealthAtCell) Arrays.fill(row, -1);
         
