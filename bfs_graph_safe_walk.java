@@ -12,7 +12,6 @@ class bfs_graph_safe_walk {
         Queue<int[]> q = new ArrayDeque<>();
         q.offer(new int[]{0, 0, startHealth});
         maxHealthAtCell[0][0] = startHealth;
-        
         int[][] dirs = {{-1,0},{1,0},{0,-1},{0,1}};
         while (!q.isEmpty()) {
             int[] curr = q.poll();
