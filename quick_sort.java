@@ -11,5 +11,4 @@ public class quick_sort {
         
         sc.close();
     }
-
 }
