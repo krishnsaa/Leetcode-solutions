@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+
 public class safeNode_graph {
     public List<Integer> eventualSafeNodes(int[][] graph) {
         int n=graph.length;
