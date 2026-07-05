@@ -1,7 +1,3 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 public class longest_inc_subseq {
     //BruteForce
 
@@ -58,7 +54,7 @@ public class longest_inc_subseq {
 
     //  Dp with bruteforce
 
-    
+
     //     public int lengthOfLIS(int[] nums) {
     //         int n = nums.length;
 
@@ -81,26 +77,26 @@ public class longest_inc_subseq {
     //         return ans;
     //     }
     // }
-class Solution {
-    public int lengthOfLIS(int[] nums) {
-        List<Integer> lis = new ArrayList<>();
 
-        for (int num : nums) {
+    // binary search
+    // public int lengthOfLIS(int[] nums) {
+    //     List<Integer> lis = new ArrayList<>();
 
-            int idx = Collections.binarySearch(lis, num);
+    //     for (int num : nums) {
 
-            if (idx < 0)
-                idx = -(idx + 1);
+    //         int idx = Collections.binarySearch(lis, num);
 
-            if (idx == lis.size())
-                lis.add(num);
-            else
-                lis.set(idx, num);
-        }
+    //         if (idx < 0)
+    //             idx = -(idx + 1);
 
-        return lis.size();
-    }
-}
+    //         if (idx == lis.size())
+    //             lis.add(num);
+    //         else
+    //             lis.set(idx, num);
+    //     }
+
+    //     return lis.size();
+    // }
 
 
 
