@@ -78,8 +78,8 @@ public class longest_inc_subseq {
     //     }
     // }
 
-    // binary search
-    
+    // binary search collection
+
     // public int lengthOfLIS(int[] nums) {
     //     List<Integer> lis = new ArrayList<>();
 
@@ -99,6 +99,31 @@ public class longest_inc_subseq {
     //     return lis.size();
     // }
 
+    //  binart search manual
+    public int lengthOfLIS(int[] nums) {
+        int[] tail = new int[nums.length];
+        int size = 0;
+
+        for (int num : nums) {
+            int left = 0, right = size;
+
+            while (left < right) {
+                int mid = left + (right - left) / 2;
+
+                if (tail[mid] < num)
+                    left = mid + 1;
+                else
+                    right = mid;
+            }
+
+            tail[left] = num;
+
+            if (left == size)
+                size++;
+        }
+
+        return size;
+    }
 
 
 }
