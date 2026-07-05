@@ -34,6 +34,7 @@ public class longest_inc_subseq {
     
 
     // Memoization on Recursion
+
     // public int lengthOfLIS(int[] nums) {
     //     int n=nums.length;
     //     int[][] dp=new int[n][n];
@@ -53,29 +54,33 @@ public class longest_inc_subseq {
     //     }
     //     return dp[i][prev+1]=len;
     // }
-    // class Solution {
-//     public int lengthOfLIS(int[] nums) {
-//         int n = nums.length;
 
-//         int[] dp = new int[n];
-//         Arrays.fill(dp, 1);
 
-//         int ans = 1;
+    //  Dp with bruteforce
 
-//         for (int i = 0; i < n; i++) {
-//             for (int j = 0; j < i; j++) {
+    
+    //     public int lengthOfLIS(int[] nums) {
+    //         int n = nums.length;
 
-//                 if (nums[j] < nums[i]) {
-//                     dp[i] = Math.max(dp[i], dp[j] + 1);
-//                 }
-//             }
+    //         int[] dp = new int[n];
+    //         Arrays.fill(dp, 1);
 
-//             ans = Math.max(ans, dp[i]);
-//         }
+    //         int ans = 1;
 
-//         return ans;
-//     }
-// }
+    //         for (int i = 0; i < n; i++) {
+    //             for (int j = 0; j < i; j++) {
+
+    //                 if (nums[j] < nums[i]) {
+    //                     dp[i] = Math.max(dp[i], dp[j] + 1);
+    //                 }
+    //             }
+
+    //             ans = Math.max(ans, dp[i]);
+    //         }
+
+    //         return ans;
+    //     }
+    // }
 class Solution {
     public int lengthOfLIS(int[] nums) {
         List<Integer> lis = new ArrayList<>();
